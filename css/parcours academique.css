@@ -1,0 +1,127 @@
+/* Reset des styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles généraux */
+body {
+    font-family: 'Arial', sans-serif;
+    background-size: 400% 400%;
+    animation: Gradient 15s ease infinite;
+    margin: 0; /* Ajout pour enlever la marge par défaut du body */
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.header {
+    background-color: rgba(249, 212, 212, 0.8);
+    font-family: 'Arial', sans-serif;
+    width: 100%;
+    z-index: 1000;
+    position: fixed; /* Fixe le header en haut de la page */
+    top: 0; /* Fixe le header au sommet de la fenêtre */
+}
+
+.logo {
+    color: black;
+    text-decoration: none;
+}
+
+/* Styles de la section Work */
+.work {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.work img {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 10px;
+}
+
+.work h1,
+.work h2,
+.work h3 {
+    color: #99a8c3;
+}
+
+.work li {
+    font-size: 48px; /* Taille du texte */
+    background-image: linear-gradient(to right, pink, #99a8c3); /* Dégradé */
+    -webkit-background-clip: text; /* Détourage du texte */
+    color: transparent; /* Couleur transparente pour le texte */
+}
+
+.work p {
+    color: black;
+}
+
+/* Footer styles */
+.footer {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer__copyright {
+    text-align: center;
+    color: #e63946;
+}
+
+/* Média query pour les écrans larges */
+@media (min-width: 768px) {
+    .navigation__container {
+        display: block;
+    }
+
+    .navigation__list {
+        display: flex;
+        justify-content: flex-end;
+        color: #e63970;
+    }
+
+    .navigation__item {
+        margin-left: 20px;
+    }
+
+    .navigation__link {
+        color: #e63946;
+        text-decoration: none;
+    }
+
+    /* Ajout pour les liens spécifiques */
+    .navigation__list li:nth-child(1) a,
+    .navigation__list li:nth-child(2) a,
+    .navigation__list li:nth-child(3) a,
+    .navigation__list li:nth-child(4) a {
+        color: pink;
+    }
+
+    .navigation__list li:nth-child(1) a:hover,
+    .navigation__list li:nth-child(2) a:hover,
+    .navigation__list li:nth-child(3) a:hover,
+    .navigation__list li:nth-child(4) a:hover {
+        background-color: #c9d9f3;
+    }
+
+    .navigation__list li:nth-child(1) a:active,
+    .navigation__list li:nth-child(2) a:active,
+    .navigation__list li:nth-child(3) a:active,
+    .navigation__list li:nth-child(4) a:active {
+        background-color: #f7f7f7;
+    }
+}
