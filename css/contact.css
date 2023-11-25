@@ -35,7 +35,6 @@ body {
     top: 0; /* Fixe le header au sommet de la fenêtre */
 }
 
-
 .logo {
     color: #e63970;
     text-decoration: none;
@@ -49,18 +48,31 @@ body {
     display: none;
 }
 
-.contact h2 {
+/* Styles de la section Work */
+.work {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.work img {
+    display: block;
+    margin: 0 auto 20px; /* Centrer les images avec une marge en bas */
+}
+
+.work h1,
+.work h2 {
     color: #99a8c3;
 }
 
-.contact p {
-    background: linear-gradient(to right, pink, #00ff00, #0000ff);
-    -webkit-background-clip: text;
-    color: transparent;
+.work__heading title ul li  {
+    font-size: 48px; /* Taille du texte */
+    background-image: linear-gradient(to right, pink, #99a8c3); /* Dégradé */
+    -webkit-background-clip: text; /* Détourage du texte */
+    color: transparent; /* Couleur transparente pour le texte */
 }
 
-.contact__form {
-    color: #e63946;
+.work p {
+    color: black; /* Correction de la couleur du texte */
 }
 
 .footer {
@@ -109,13 +121,11 @@ body {
     .navigation__list li:nth-child(2) a:hover,
     .navigation__list li:nth-child(3) a:hover,
     .navigation__list li:nth-child(4) a:hover {
-        background-color: #c9d9f3;
+        background-color: #c9d9f3; /* Bleu ciel clair au survol */
     }
 
     .navigation__list li:nth-child(1) a:active,
     .navigation__list li:nth-child(2) a:active,
     .navigation__list li:nth-child(3) a:active,
     .navigation__list li:nth-child(4) a:active {
-        background-color: #f7f7f7;
-    }
-}
+        background-color: #f7f7
