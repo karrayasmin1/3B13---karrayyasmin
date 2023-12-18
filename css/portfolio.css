@@ -1,12 +1,14 @@
 /* Reset des styles */
-* {
+*
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Styles généraux */
-body {
+ /* Styles généraux */
+body 
+{
     font-family: 'Arial', sans-serif;
     background-image: linear-gradient(135deg, #f2f5fa, #99a8c3, #e63946, #a83809);
     background-size: 400% 400%;
@@ -14,19 +16,21 @@ body {
     background-color: #ae6692;
 }
 
-@keyframes Gradient {
+@keyframes Gradient 
+{
     0% {
         background-position: 0% 50%;
-    }
+        }
     50% {
         background-position: 100% 50%;
-    }
+        }
     100% {
         background-position: 0% 50%;
-    }
+        }
 }
 
-.header {
+.header
+{
     background-color: rgba(249, 212, 212, 0.8);
     font-family: 'Arial', sans-serif;
     width: 100%;
@@ -35,22 +39,21 @@ body {
     top: 0; /* Fixe le header au sommet de la fenêtre */
 }
 
-.logo {
+.logo 
+{
     color: #e63970;
     text-decoration: none;
 }
-.li a {
-    background-color: #ffb600;
-}
 
-.navigation {
+.navigation 
+{
     padding: 20px 0;
 }
 
-.navigation__container {
+.navigation__container 
+{
     display: none;
 }
-/* Styles de la section Work */
 .work {
     padding: 50px 0;
     text-align: center;
@@ -58,15 +61,11 @@ body {
 
 .work img {
     display: inline-block;
+    border-radius: 50%;
     vertical-align: middle; /* Alignement vertical au centre si nécessaire */
     margin: 0 10px; /* Marge entre les images */
 }
-.work__heading title li 
-{
-    background: linear-gradient(to right, pink, #00ff00, #0000ff);
-    -webkit-background-clip: text;
-    color: transparent;
-}
+
 .work h1 {
     color: #99a8c3;
 }
@@ -79,10 +78,16 @@ body {
     -webkit-background-clip: text; /* Détourage du texte */
     color: transparent; /* Couleur transparente pour le texte */
 }
-.work p {
-    color: noire ;
+.work li {
+    text-align: left;
+    font-size: 25px;
+    color: hwb(255 62% 14%);
 }
-
+.work p {
+    text-align :justify ;
+    font-size: 15px;
+    color: hwb(254 4% 89%);
+}
 
 .footer {
     background-color: rgba(255, 255, 255, 0.8);
@@ -96,7 +101,6 @@ body {
     text-align: center;
     color: #e63946;
 }
-
 /* Média query pour les écrans larges */
 @media (min-width: 768px) {
     .navigation__container {

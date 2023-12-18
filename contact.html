@@ -5,18 +5,19 @@
   <link rel="'stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" href="css/contact.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="js/contact.js">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-  <script src="js/functions-min.js"></script>
+  <script src="js/functions-amin.js"></script>
 </head>
 <body>
-
-  <!-- SECTION: Splashscreen -->
+ <!-- SECTION: Splashscreen --
   <div class="splashscreen">
     <div class="preloader">
       <span class="preloader__text">Loading page</span>
     </div>
   </div>
-  <!-- END SECTION: Splashscreen -->
+   END SECTION: Splashscreen -->
   
   <!-- SECTION: Intro -->
   <header class="header">
@@ -37,21 +38,31 @@
     <!-- END SECTION: Navigation -->
   </header>
   <section id="contact" class="contact">
-    <h2 class="contact__heading title">Contact Me</h2>
-    <p>Contactez-moi pour toute collaboration</p>
-    <div class="contact__wrapper wrapper--large">
-      <div class="contact__visual">
-        <img src="img/contact-visual.png" alt="Visual Contact">
-      </div>
-      <form class="contact__form">
-        <input class="contact__form-el contact__form-el--name" type="text" placeholder="Votre nom" spellcheck="false">
-        <input class="contact__form-el contact__form-el--email" type="email" placeholder="Votre mail" spellcheck="false">
-        <textarea class="contact__form-el contact__form-el--message" placeholder="Your Message"></textarea>
-        <input class="contact__form-el contact__form-el--submit" type="submit" value="Send">
-      </form>
-    </div>
+    <h2 class="contact__heading title">Contact_Me</h2>
+    <div class="container">
+      <div class="main">
+            <div class="content">
+                    <h3>Contact Me</h3>
+                    <form action="#" method="post">
+                      <input type="text" name="name" placeholder="Your Name"></input>
+                      
+
+                      <input type="email" name="name" placeholder="Your Email"></input>
+                      <textarea name="message" placeholder="Your Messgae"></textarea>
+                  <button type="submit" class="btn">Send<i class="fas fa-paper-plane"></i></button>
+              </form>
+            </div>
+            <div class="form-img">
+              <img src="img\contact.jpg" alt="contact" width="500" height="500">
+            </div> 
+      </div>  
+  </div>
   </section>
   <footer class="footer">
+  <div class="socialIcons">
+    <a href=""><i class=" fa-brands fa-facebook "></i></a>
+    <a href=""><i class=" fa-brands fa-instagram "></i></a>
+  </div>
     <div class="footer__wrapper wrapper--large">
       <p class="footer__copyright no-margin">&copy; 2023 - Esprit</p>
     </div>

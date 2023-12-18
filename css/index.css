@@ -58,8 +58,9 @@ body {
 
 .work img {
     display: inline-block;
-    vertical-align: middle; /* Alignement vertical au centre si nécessaire */
+    vertical-align :middle; /* Alignement vertical au centre si nécessaire */
     margin: 0 10px; /* Marge entre les images */
+    border-radius: 50%;
 }
 .work h1 {
     color: #99a8c3;

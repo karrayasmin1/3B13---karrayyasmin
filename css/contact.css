@@ -48,31 +48,122 @@ body {
     display: none;
 }
 
-/* Styles de la section Work */
-.work {
+/* Styles de la section contact */
+.contact {
     padding: 50px 0;
     text-align: center;
+    padding: 3em;
 }
-
-.work img {
-    display: block;
-    margin: 0 auto 20px; /* Centrer les images avec une marge en bas */
+.container
+{
+    max-width: 700px;
+    margin: 0 auto;
 }
-
-.work h1,
-.work h2 {
+.contact h2
+{
     color: #99a8c3;
 }
-
-.work__heading title ul li  {
-    font-size: 48px; /* Taille du texte */
-    background-image: linear-gradient(to right, pink, #99a8c3); /* Dégradé */
-    -webkit-background-clip: text; /* Détourage du texte */
-    color: transparent; /* Couleur transparente pour le texte */
+.main
+{
+    position: relative;
+    display: flex;
+    margin: 3px 0;
 }
-
-.work p {
-    color: black; /* Correction de la couleur du texte */
+.content
+{
+    flex-basis: 50%;
+    padding: 3em 3em;
+    background-image: linear-gradient(to right,rgb(166, 145, 209), #99a8c3);
+    box-shadow: 2px 9px 49px -17px black(0,0,0,0,1);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.form_img
+{
+    flex-basis:50%;
+    background: #f0f4f8;
+    background-size: cover;
+    padding: 40px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius:8px ;
+    align-items : center;
+    display: grid;
+}
+.form-image image
+{
+    max-width: 100%;
+}
+.btn,
+button,
+input
+{
+    border-radius:35px ;
+}
+.btn:hover,
+button:hover
+{
+    color :#272346;
+    transition: 0.5s ease;
+}
+.contact form
+{
+    margin: 30px 0;
+}
+.contact input
+{
+    outline:none;
+    margin-bottom: 15px;
+    font-stretch: 16px;
+    color: #999;
+    padding: 14px 20px;
+    width: 100%;
+    display: inline-block;
+    box-sizing:border-box ;
+    border: none;
+    background: #fcfcfc;
+    transition: 0.3s ease;
+}
+.contact textarea
+{
+    outline:none;
+    margin-bottom: 35px;
+    font-stretch: 20px;
+    color: #999;
+    padding: 14px 20px;
+    width: 100%;
+    display: inline-block;
+    box-sizing:border-box ;
+    border: none;
+    background: #fcfcfc;
+    transition: 0.3s ease;
+}
+.contact input :focus
+{
+    background: transparent;
+    border:1px solid;
+}
+.contact button
+{
+    font-size: 18px;
+    color: #f0f4f8;
+    width: 100%;
+    background: #143167;
+    font-weight: 600;
+    transition: 0.3s ease;
+    padding: 14px 15px;
+}
+@media (max-width: 736px)
+{
+    .contact {flex-direction: column;}
+    .contact form {margin-top: 30px;
+    margin-bottom: 10px;}
+    .contact img{border-radius: 0;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    order:2;}
+    content {order: 1;
+    border-top-left-radius: 8px;
+}
 }
 
 .footer {
@@ -128,4 +219,6 @@ body {
     .navigation__list li:nth-child(2) a:active,
     .navigation__list li:nth-child(3) a:active,
     .navigation__list li:nth-child(4) a:active {
-        background-color: #f7f7
+        background-color: #f7f7f7;
+    }
+}
